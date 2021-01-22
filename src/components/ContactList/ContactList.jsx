@@ -12,7 +12,8 @@ const ContactList = () => {
 
   useEffect(() => {
     dispatch(fetchContacts());
-  }, [dispatch]);
+    //eslint-disable-next-line
+  }, []);
 
   return (
     <table className="List-table">
